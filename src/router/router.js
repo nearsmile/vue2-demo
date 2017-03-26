@@ -11,10 +11,6 @@ export default new Router({
       path: '/',
       redirect: '/notepad'
     },{
-      path: '/hello',
-      name: 'Hello',
-      component: Hello
-    },{
       path: '/notepad',
       name: 'Notepad',
       component: notepad
