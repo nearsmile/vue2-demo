@@ -2,11 +2,11 @@
 	<div class="event-content">
 			<section class="event-tab" @click="changeCollapse(0, $event)">
 				未完成
-				<span :class="{'close-arrow': collapse[0].show }"></span>
+				<span :class="{'close-arrow': !collapse[0].show }"></span>
 			</section>
 			<section class="event-box" :style="{'height':'auto', 'display':'block'}">
 				<ul>
-					<li class="event-list clearfix" v-for="value in getToDo">
+					<li class="event-list clear" v-for="value in getToDo">
 						<input type="checkbox" :key="value.id" @click="moveToDone(value.id)">
 						<div :title="value.content">{{ value.content }}</div>
 						<button class="cancel-btn" @click="moveCancel(value.id)">
@@ -76,6 +76,7 @@
 		methods: {
 			changeCollapse(index,event) {
 				const show = this.collapse[index].show;
+				console.log(show);
 				show ? this.closeCollapse(event)
 						 : this.openCollapse(event);
 				this.collapse[index].show = !show;

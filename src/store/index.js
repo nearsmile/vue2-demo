@@ -7,11 +7,11 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 import event from './event'
-// import theme from './theme'
+import theme from './theme'
 
 export default new Vuex.Store({
 	modules: {
 		event,
-		// theme
+		theme
 	}
 })

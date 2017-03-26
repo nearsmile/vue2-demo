@@ -5,8 +5,6 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
   font-style: normal;
   text-decoration: none;
   border: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: normal;
   font-family: tahoma, arial, helvetica, Sans-serif;
@@ -30,14 +28,34 @@ body {
   outline: none;
 }
 
-.fl {
+.left {
   float: left;  
 }
+.right { 
+  float: right;
+}
 
-.clearfix:after{
+.clear:after{
   content: '';
   display: block;
   height: 0;  
   clear: both;
   visibility: hidden;
+}
+.clear {
+  zoom: 1;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

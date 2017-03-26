@@ -1,8 +1,8 @@
 <template>
-	<header>
+	<header class="note-header">
 		<h1>
 			 记事本
-			 <a href="javascript:;" @click="showTools" class="btn-list clearfix">
+			 <a href="javascript:;" @click="showTools" class="btn-list clear">
 			 	<span></span>
 			 </a>
 		</h1>
@@ -20,7 +20,7 @@ export default {
 }
 </script>
 <style scoped>
-	header {
+	.note-header {
 		position: relative;
 		width: 100%;
 		height: 0.8rem;
