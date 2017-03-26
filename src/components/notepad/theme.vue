@@ -1,6 +1,6 @@
 <template>
 	<section class="theme-box" :class="{'theme-box-show': isShow}">
-		<div class="theme">
+		<div>
 			<h1 class="theme-title">
 				点击切换主题色
 			</h1>
@@ -65,7 +65,10 @@
 		text-align: center;
 		border-radius: 0.04rem;
 		font-size: 0.18rem;
-
+	}
+	.theme-title {
+		text-align: center;
+		padding: 0.1rem 0;
 	}
 	.theme-list .list-item-dot {
 		display: inline-block;

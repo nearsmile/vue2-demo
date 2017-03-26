@@ -79,6 +79,7 @@
 		height: 0.6rem;
 		line-height: 0.5rem;
 		color: #fff;
+		font-size: 0.16rem;
 		transition: background 0.3s ease-in;
 	}
 </style>

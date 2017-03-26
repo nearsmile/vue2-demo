@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import notepad from '@/pages/notepad/notepad'
+
+
+const notepad = r => require.ensure([], () => r(require('../page/notepad')), 'notepad');
 
 Vue.use(Router)
 
