@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-
-const notepad = r => require.ensure([], () => r(require('../page/notepad')), 'notepad');
+const notepad = r => require.ensure([], () => r(require('../page/notepad')), 'notepad')
 
 Vue.use(Router)
 
@@ -13,7 +12,11 @@ export default new Router({
       redirect: '/notepad'
     },{
       path: '/notepad',
-      name: 'Notepad',
+      name: 'notepad',
+      component: notepad
+    },{
+      path: '/notepad',
+      name: 'notepad',
       component: notepad
     }
   ]
