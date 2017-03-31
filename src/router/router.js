@@ -1,20 +1,25 @@
-import Vue from 'vue'
-import Router from 'vue-router'
 
 
+
+const home = r => require.ensure([], () => r(require('../page/home')), 'home');
 const notepad = r => require.ensure([], () => r(require('../page/notepad')), 'notepad');
+const daily = r => require.ensure([], () => r(require('../page/daily')), 'daily');
 
-Vue.use(Router)
-
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      redirect: '/notepad'
-    },{
-      path: '/notepad',
-      name: 'Notepad',
-      component: notepad
-    }
-  ]
-})
+export default [
+  {
+    path: '/',
+    redirect: '/home'
+  },{
+    path: '/home',
+    name: 'home',
+    component: home
+  },{
+    path: '/daily',
+    name: 'daily',
+    component: daily
+  },{
+    path: '/notepad',
+    name: 'Notepad',
+    component: notepad
+  }
+]
