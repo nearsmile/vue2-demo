@@ -10,18 +10,19 @@
 		data() {
 			return {
 				routerLists: [
-				{name: 'notepad'},
-				{name: 'daily'},
+					{name: 'notepad'},
+					{name: 'daily'},
 				],
 			}
-		}
+		},
+	
 	}
 </script>
 <style>
 	.router-default {
 		width: 100%;
 		padding: 0 5%;
-		line-height: 0.4rem;
+		line-height: 1.5rem;
 		border-bottom: 1px solid #eee;
 	}
 </style>

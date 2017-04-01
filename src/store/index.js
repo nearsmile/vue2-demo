@@ -8,10 +8,12 @@ Vue.use(Vuex)
 
 import event from './event'
 import theme from './theme'
+import daily from './daily'
 
 export default new Vuex.Store({
 	modules: {
 		event,
-		theme
+		theme,
+		daily
 	}
 })
