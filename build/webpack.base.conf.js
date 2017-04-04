@@ -13,8 +13,8 @@ module.exports = {
   },
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js',
-    chunkFilename: '[name].js',
+    filename: '[name]-[hash:6].js',
+    chunkFilename: '[name]-[chunkhash:6].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -43,7 +43,7 @@ module.exports = {
         loader: 'url-loader',
         query: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name: utils.assetsPath('img/[name].[hash:6].[ext]')
         }
       },
       {
@@ -51,7 +51,7 @@ module.exports = {
         loader: 'url-loader',
         query: {
           limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+          name: utils.assetsPath('fonts/[name].[hash:6].[ext]')
         }
       }
     ]

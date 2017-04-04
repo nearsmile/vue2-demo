@@ -1,8 +1,8 @@
 @font-face {font-family: "iconfont";
-  src: url('//at.alicdn.com/t/font_89tkzniqghvholxr.eot?t=1489542174167'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_89tkzniqghvholxr.eot?t=1489542174167#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_89tkzniqghvholxr.woff?t=1489542174167') format('woff'), /* chrome, firefox */
-  url('//at.alicdn.com/t/font_89tkzniqghvholxr.ttf?t=1489542174167') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  /*src: url('//at.alicdn.com/t/font_89tkzniqghvholxr.eot?t=1489542174167'), /* IE9*/
+  /*src: url('//at.alicdn.com/t/font_89tkzniqghvholxr.eot?t=1489542174167#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  src:url('../font/font-daily.woff') format('woff'), /* chrome, firefox */
+  url('../font/font-daily.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('//at.alicdn.com/t/font_89tkzniqghvholxr.svg?t=1489542174167#iconfont') format('svg'); /* iOS 4.1- */
 }
 

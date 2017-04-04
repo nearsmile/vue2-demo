@@ -48,7 +48,7 @@
 		
 		mounted() {
 			var self = this;
-			this.dom = new Swiper('.swipe', {
+			this.dom = new Swiper('.' + self.swipeid, {
 			// var swiper = new Swiper('.'+ self.swipeid, {
 				loop: self.loop,
 				pagination: '.swiper-pagination',

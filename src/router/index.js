@@ -8,9 +8,8 @@ import Home from './home'
 import Notepad from './notepad'
 import Daily from './daily'
 
-
-
 Vue.use(Router)
+
 export default new Router({
 	 routes: [
 	  Home,

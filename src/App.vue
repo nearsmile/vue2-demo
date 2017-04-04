@@ -46,7 +46,7 @@ export default {
   height: 100vh;
   overflow: auto;
   z-index: 1;
-  transition: tranform 0.3s ease;
+  transition: tranform 0.3s ease-in;
 }
 
 </style>
