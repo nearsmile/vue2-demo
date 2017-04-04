@@ -1,7 +1,7 @@
 <template>
 	<div class="swiper-container" :class="swipeid">
 		<div class="swiper-wrapper">
-			<slot name="swipe-item"></slot>
+			<slot name="swiper-item"></slot>
 		</div>
 		<div :class="{'swiper-pagination': pagination}"></div>
 	</div>
@@ -9,7 +9,7 @@
 <script>
 	import './swiper.js'
 	export default {
-		name: "swipe",
+		name: "swiper",
 		props: {
 			swipeid: {
 				type: String,
@@ -45,9 +45,11 @@
 				dom: ""
 			}
 		},
+		
 		mounted() {
-			const self = this;
-			this.dom = new Swiper(`.${self.swipeid}`, {
+			var self = this;
+			this.dom = new Swiper('.' + self.swipeid, {
+			// var swiper = new Swiper('.'+ self.swipeid, {
 				loop: self.loop,
 				pagination: '.swiper-pagination',
 				paginationType: self.paginationType,
@@ -58,7 +60,8 @@
 				observer: true,
 				observeParents: true
 			})
-		}
+		},
+		
 	}
 </script>
 <style>

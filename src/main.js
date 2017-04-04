@@ -2,12 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import Vuex from 'vuex'
 import Router from 'vue-router'
 
-import routes from './router/router'
+// import swipe from '@components/daily/swipe.vue'
+import router from './router'
 import store from './store/index'
-import './config/rem'
+import './config/flexible'
 import FastClick from 'fastclick'
 
 Vue.config.productionTip = false
@@ -18,12 +18,9 @@ if ('addEventListener' in document) {
   }, false);
 }
 
-Vue.use(Vuex)
-Vue.use(Router)
 
-const router = new Router({
-	 routes
-});
+/*Vue.component( swipe.name, swipe )
+
 
 /* eslint-disable no-new */
 new Vue({
