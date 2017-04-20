@@ -119,7 +119,8 @@ export default {
 					dom.scrollTop = height;
 				}
 			}, 1);
-		}
+		},
+		
 	}
 }
 </script>

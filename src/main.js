@@ -10,6 +10,14 @@ import store from './store/index'
 import './config/flexible'
 import FastClick from 'fastclick'
 
+// import './directives'
+Vue.directive('title', {
+	inserted(el, binding) {
+		document.title = el.dataset.title
+	}
+})
+
+
 Vue.config.productionTip = false
 
 if ('addEventListener' in document) {
